@@ -45,7 +45,12 @@ const questions = [{
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    const writeReadMe = generateMarkdown(data);
+    fs.writeFile('README.md', writeReadMe, (err) =>
+    err ? crossOriginIsolated.log(err) : console.log('Create README.md')
+    );
+}
 
 // TODO: Create a function to initialize app
 function init() {
