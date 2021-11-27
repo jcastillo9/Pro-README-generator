@@ -7,23 +7,27 @@ const generateMarkdown = require('./utils/generateMarkdown.js');
 const questions = [{
     type: 'input',
     name: 'title',
-    message: 'What is the title of your project?'
+    message: 'What is the title of your application?'
 },
 {   type: 'input',
     name: 'description',
-    message: 'Provide a short description explaingin your project.'
+    message: 'What does the application do?'
 },
 {   type: 'input',
     name: 'installation',
-    message: 'What are the steps required to install your project?.'
+    message: 'How do I install this application?'
 },
 {   type: 'input',
     name: 'usage',
-    message: 'Provide instructions and examples for use.',
+    message: 'How do I use this application?',
 },
 {   type: 'input',
-    name: 'credits',
-    message: 'List all contributors along with links to their Github profile.',
+    name: 'contributing',
+    message: 'How can other developers contribute to this application? '
+},
+{   type: 'input',
+    name: 'tests',
+    message: 'How can other developers contribute to this application?'
 },
 {   type: 'list',
     name: 'license',
@@ -31,12 +35,12 @@ const questions = [{
     choices: ['MIT', 'Apache 2.0', 'BSD', 'No License'],
 },
 {   type: 'input',
-    name: 'contributing',
-    message: 'How can other developers contribute to your project? '
+    name: 'username',
+    message: 'Please enter your GitHub Username.',
 },
 {   type: 'input',
-    name: 'tests',
-    message: 'Are there any tests you would like your contributors to run?'
+    name: 'email',
+    message: 'Please enter your email.',
 },
 ];
 
@@ -44,7 +48,11 @@ const questions = [{
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then(resp => {
+        generateReadMe(resp);
+    });
+}
 
 // Function call to initialize app
 init();
