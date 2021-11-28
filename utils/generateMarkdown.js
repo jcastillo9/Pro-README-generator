@@ -34,7 +34,7 @@ function renderLicenseSection(license) {
     return ``
   } else {
     return `# License
-    ## License}
+    ## ${License}
     Read more about ${renderLicenseLink(license)}`
   }
 }
@@ -58,7 +58,7 @@ function generateMarkdown(data) {
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions?](#questions)
- ${addingLicense(data.license)}
+  ${addingLicense(data.license)}
 
   ## Description
   ${data.description}
