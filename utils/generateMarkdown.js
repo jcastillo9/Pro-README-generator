@@ -2,12 +2,8 @@
 function renderLicenseBadge(license) {
   if (license === 'MIT') {
     return `![License: MIT](<https://img.shields.io/badge/License-MIT-yellow.svg>)`
-  } else if (license === 'Academic Free License v3.0') {
-    return `[![License: AFL-3.0](<https://img.shields.io/badge/License-AFL--3.0-lightgrey.svg>)`
   } else if (license === 'Apache license 2.0') {
     return `![License: Apache 2.0.](<https://img.shields.io/badge/License-Apache_2.0-blu.svg>)`
-  } else if (license === 'Artistic license 2.0') {
-    return `![License: Artistic-2.0](<https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg>)`
   } else {
     return ``
   }
@@ -17,12 +13,8 @@ function renderLicenseBadge(license) {
 function renderLicenseLink(license) {
   if (license === 'MIT') {
     return `[MIT](https://opensource.org/licenses/MIT)`
-  } else if (license === 'Academic Free License v3.0') {
-    return `[AFL-3.0]((https://opensource.org/licenses/AFL-3.0))`
   } else if (license === 'Apache license 2.0') {
     return `[Apache 2.0.](https://opensource.org/licenses/Apache-2.0)`
-  } else if (license === 'Artistic license 2.0') {
-    return `[Artistic-2.0](https://opensource.org/licenses/Artistic-2.0)`
   } else {
     return ``
   }
@@ -34,8 +26,8 @@ function renderLicenseSection(license) {
     return ``
   } else {
     return `# License
-    ## ${License}
-    Read more about ${renderLicenseLink(license)}`
+  ## ${license}
+  Read more about ${renderLicenseLink(license)}.`
   }
 }
 
