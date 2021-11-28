@@ -1,4 +1,4 @@
-# sample 
+# README Generator ![License: Apache 2.0](<https://img.shields.io/badge/License-Apache_2.0-blue.svg>)
 
   ## Table of Contents
   * [Description](#description)
@@ -10,19 +10,19 @@
   * [License](#license)
 
   ## Description
-  sampple
+  Generates README using command-line application.
 
   ## Installation
-  sampple
+  No installation needed.
 
   ## Usage
-  sampple
+  Fork repository and run node.index.js. Then, answer the series of questions to create your README.
 
   ## How to Contribue
-  sampple
+  Other developers are welcome to add to this repository. One thing I would liek to improve are the number of licenses to choose from.
 
   ## Tests
-  sampple
+  Test this project by running node index.js.
 
   ## Questions?
   ### Reach me here:
@@ -31,4 +31,4 @@
   
   # License
   ## Apache 2.0
-  Read more about .
+  Read more about [Apache 2.0 License](https://opensource.org/licenses/Apache-2.0).
