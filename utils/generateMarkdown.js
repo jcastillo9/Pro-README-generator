@@ -61,7 +61,7 @@ function generateMarkdown(data) {
   ## Usage
   ${data.usage}
 
-  ## How to Contribue
+  ## How to Contribute
   ${data.contributing}
 
   ## Tests
