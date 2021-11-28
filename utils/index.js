@@ -1,33 +1,33 @@
-// TODO: Include packages needed for this application
+// packages needed for this project
 const inquirer = require('inquirer');
 const fs = require('fs')
 const generateMarkdown = require('./generateMarkdown')
 
-// TODO: Create an array of questions for user input
+// array of questions for user input
 const questions = [{
     type: 'input',
     name: 'title',
-    message: 'What is the title of your application?'
+    message: 'What is the title of your project?'
 },
 {   type: 'input',
     name: 'description',
-    message: 'What does the application do?'
+    message: 'What does the project do?'
 },
 {   type: 'input',
     name: 'installation',
-    message: 'How do I install this application?'
+    message: 'How do I install this project?'
 },
 {   type: 'input',
     name: 'usage',
-    message: 'How do I use this application?',
+    message: 'How do I use this project?',
 },
 {   type: 'input',
     name: 'contributing',
-    message: 'How can other developers contribute to this application? '
+    message: 'How can other developers contribute to this project? '
 },
 {   type: 'input',
     name: 'tests',
-    message: 'How can other developers contribute to this application?'
+    message: 'How can the project be tested?'
 },
 {   type: 'list',
     name: 'license',
