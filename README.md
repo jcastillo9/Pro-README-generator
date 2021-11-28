@@ -1,4 +1,4 @@
-# Pro-README-generator
+# Pro-README-generator ![License: MIT](<https://img.shields.io/badge/License-MIT-yellow.svg>)
 
 # User Story
 As a developer, I want a README generator so that I can quickly create a professional README for a new project.
