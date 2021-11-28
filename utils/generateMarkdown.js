@@ -18,13 +18,13 @@ function renderLicenseBadge(license) {
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
   if (license === 'MIT') {
-    return '![License: MIT](<https://opensource.org/licenses/MIT>)'
+    return '[MIT](https://opensource.org/licenses/MIT)'
   } else if (license === 'Academic Free License v3.0') {
-    return '[![License: AFL-3.0](<(https://opensource.org/licenses/AFL-3.0)>)'
+    return '[AFL-3.0]((https://opensource.org/licenses/AFL-3.0))'
   } else if (license === 'Apache 2.0') {
-    return '![License: Apache 2.0.](<https://opensource.org/licenses/Apache-2.0>)'
+    return '[Apache 2.0.](https://opensource.org/licenses/Apache-2.0)'
   } else if (license === 'Artistic license 2.0') {
-    return '![License: Artistic-2.0](<https://opensource.org/licenses/Artistic-2.0>)'
+    return '[Artistic-2.0](https://opensource.org/licenses/Artistic-2.0)'
   } else {
     return ''
   }
@@ -37,8 +37,41 @@ function renderLicenseSection(license) {}
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+  ## Badges
+  ${renderLicenseBadge(Data.license)}
 
-`;
+  ## Table of Contents
+  * [License](#license)
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [How to Contribute](#contributing)
+  * [Tests](#tests)
+  * [Questions?](#questions)
+  
+  ## License
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}
+
+  ## Description
+  ${data.description}
+
+  ## Installation
+  ${data.install}
+
+  ## Usage
+  ${data.usage}
+
+  ## How to Contribue
+  ${data.contributing}
+
+  ## Tests
+  ${data.tests}
+
+  ## Questions?
+  ### Reach me here:
+  [${data.username}](https://github.com/${data.username})
+  ${data.email}`;
 }
 
 module.exports = generateMarkdown;
