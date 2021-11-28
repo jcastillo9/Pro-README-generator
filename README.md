@@ -26,13 +26,13 @@ As a developer, I want a README generator so that I can quickly create a profess
 * node.js
 
 # Installation
-Link to demo:(<https://watch.screencastify.com/v/JWPgesFHY9EUa28pcM0s>) 
+Link to demo:<https://watch.screencastify.com/v/JWPgesFHY9EUa28pcM0s>
 
 
  ## Questions:
   For any further assistance, you may contact me at:
 
-  * Github: (<https://github.com/jcastillo9>)
+  * Github: <https://github.com/jcastillo9>
   * Email: janette.castillo91@yahoo.com
 
 # License
