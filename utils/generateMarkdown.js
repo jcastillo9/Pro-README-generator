@@ -1,14 +1,12 @@
-const licenseOptions = ["MIT", "Academic Free License v3.0", "Apache license 2.0", "Artistic license 2.0"] 
-
 // function that returns a license badge based on which license is passed in
 function renderLicenseBadge(license) {
-  if (license === licenseOptions[0]) {
-    return '![License: MIT](<https://img.shields.io/badge/License-MIT-yellow.svg>)'
-  } else if (license === licenseOptions[1]) {
+  if (license === 'MIT') {
+    return `![License: MIT](<https://img.shields.io/badge/License-MIT-yellow.svg>)`
+  } else if (license === 'Academic Free License v3.0') {
     return '[![License: AFL-3.0](<https://img.shields.io/badge/License-AFL--3.0-lightgrey.svg>)'
-  } else if (license === licenseOptions[2]) {
+  } else if (license === 'Apache license 2.0') {
     return '![License: Apache 2.0.](<https://img.shields.io/badge/License-Apache_2.0-blu.svg>)'
-  } else if (license === licenseOptions[3]) {
+  } else if (license === 'Artistic license 2.0') {
     return '![License: Artistic-2.0](<https://img.shields.io/badge/License-Artistic%202.0-0298c3.svg>)'
   } else {
     return ''
@@ -17,13 +15,13 @@ function renderLicenseBadge(license) {
 
 // function that returns the license link
 function renderLicenseLink(license) {
-  if (license === licenseOptions[0]) {
+  if (license === 'MIT') {
     return '[MIT](https://opensource.org/licenses/MIT)'
-  } else if (license === licenseOptions[1]) {
+  } else if (license === 'Academic Free License v3.0') {
     return '[AFL-3.0]((https://opensource.org/licenses/AFL-3.0))'
-  } else if (license === licenseOptions[2]) {
+  } else if (license === 'Apache license 2.0') {
     return '[Apache 2.0.](https://opensource.org/licenses/Apache-2.0)'
-  } else if (license === licenseOptions[3]) {
+  } else if (license === 'Artistic license 2.0') {
     return '[Artistic-2.0](https://opensource.org/licenses/Artistic-2.0)'
   } else {
     return ''
@@ -33,13 +31,13 @@ function renderLicenseLink(license) {
 // function that returns the license section of README
 function renderLicenseSection(license) {
   if (license === 'MIT') {
-    return `Read more about ${licenseOptions[0]} here:`
+    return `Read more about ['[MIT](https://opensource.org/licenses/MIT)'] here:`
   } else if (license === 'Academic Free License v3.0') {
-    return `Read more about ${licenseOptions[1]} here:`
+    return `Read more about ${renderLicenseLink(license)} here:`
   } else if (license === 'Apache 2.0') {
-    return `Read more about ${licenseOptions[2]} here:`
+    return `Read more about ${renderLicenseLink(license)} here:`
   } else if (license === 'Artistic license 2.0') {
-    return `Read more about ${licenseOptions[3]} here:`
+    return `Read more about ${renderLicenseLink(license)} here:`
   } else {
     return ''
   }
@@ -52,17 +50,13 @@ function generateMarkdown(data) {
   ${renderLicenseBadge(data.license)}
 
   ## Table of Contents
-  * [License](#license)
   * [Description](#description)
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
   * [Tests](#tests)
   * [Questions?](#questions)
-  
-  ## License
-  ${renderLicenseSection(data.license)}
-  ${renderLicenseLink(data.license)}
+  * [License](#license)
 
   ## Description
   ${data.description}
@@ -81,8 +75,12 @@ function generateMarkdown(data) {
 
   ## Questions?
   ### Reach me here:
-  [${data.username}](https://github.com/${data.username})
-  ${data.email}`;
+  * Github: [${data.username}](https://github.com/${data.username})
+  * Email: ${data.email}
+  
+  ## License
+  ${renderLicenseSection(data.license)}
+  ${renderLicenseLink(data.license)}`;
 }
 
 module.exports = generateMarkdown;
