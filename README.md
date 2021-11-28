@@ -33,9 +33,6 @@ Link to demo:
   For any further assistance, you may contact me at:
 
   * Github: (<https://github.com/jcastillo9>)
-
-  OR
-
   * Email: janette.castillo91@yahoo.com
 
 # License
