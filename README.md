@@ -29,9 +29,14 @@ As a developer, I want a README generator so that I can quickly create a profess
 Link to demo: 
 
 
-## Credits
- 
-Lead Developer - Janette Castillo (janette.castillo91@yahoo.com)
+ ## Questions:
+  For any further assistance, you may contact me at:
+
+  * Github: (<https://github.com/jcastillo9>)
+
+  OR
+
+  * Email: janette.castillo91@yahoo.com
 
 # License
  
