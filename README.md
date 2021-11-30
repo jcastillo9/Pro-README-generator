@@ -3,7 +3,7 @@
 ## Table of Contents
   * [Description](#description)
   * [How it Works](#how-it-works)
-  * [Technologies Used](#technologiesused)
+  * [Technologies Used](#technologies-used)
   * [Questions?](#questions)
   * [License](#license)
 
