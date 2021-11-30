@@ -2,7 +2,7 @@
 
 ## Table of Contents
   * [Description](#description)
-  * [How it Works](#howitworks)
+  * [How it Works](#how-it-works)
   * [Technologies Used](#technologiesused)
   * [Questions?](#questions)
   * [License](#license)
