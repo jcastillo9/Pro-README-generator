@@ -2,8 +2,8 @@
 
 ## Table of Contents
   * [Description](#description)
-  * [How it Works](#how it works)
-  * [Technologies Used](#Technologies used)
+  * [How it Works](#howitworks)
+  * [Technologies Used](#technologiesused)
   * [Questions?](#questions)
   * [License](#license)
 
