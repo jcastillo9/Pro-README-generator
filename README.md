@@ -1,9 +1,16 @@
 # Pro-README-generator ![License: MIT](<https://img.shields.io/badge/License-MIT-yellow.svg>)
 
-# User Story
+## Table of Contents
+  * [Description](#description)
+  * [How it Works](#how it works)
+  * [Technologies Used](#Technologies used)
+  * [Questions?](#questions)
+  * [License](#license)
+
+## Description
 As a developer, I want a README generator so that I can quickly create a professional README for a new project.
 
-# How it Works
+## How it Works
 
 * GIVEN a command-line application that accepts user input
 * WHEN I am prompted for information about my application repository
@@ -22,19 +29,19 @@ As a developer, I want a README generator so that I can quickly create a profess
 * THEN I am taken to the corresponding section of the README
 
 
-# Technologies Used
+## Technologies Used
 * node.js
 
-# Installation
+## Installation
 Link to demo: <https://watch.screencastify.com/v/JWPgesFHY9EUa28pcM0s>
 
 
  ## Questions:
-  For any further assistance, you may contact me at:
+ ### Reach me here:
 
   * Github: <https://github.com/jcastillo9>
   * Email: janette.castillo91@yahoo.com
 
-# License
+## License
  
 The MIT License (MIT)
